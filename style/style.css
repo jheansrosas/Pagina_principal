@@ -1,0 +1,139 @@
+/* Reset básico para garantir consistência entre navegadores */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #282c34;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Estilo para o container (Centraliza o conteúdo) */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #1a1e24;
+    color: #61dafb;
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 3px solid #62dafb;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 3em;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #ccc;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header nav {
+    margin-top: 20px;
+}
+
+/*Seção de projetos */
+
+#projetos {
+    padding: 60px 0;
+    background-color: #3a3f47;
+    text-align: center;
+}
+
+#projetos h2 {
+    font-size: 2.5em;
+    color: #61dafb;
+    margin-bottom: 40px;
+}
+
+/* Esetilo para cada card de projeto */
+.projeto-card {
+    background-color: #282c34;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.projeto-card h3 {
+    color: #e0e0e0;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.projeto-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projeto-card p {
+    font-size: 1em;
+    color: #ccc;
+    margin-bottom: 25px;
+}
+
+.projeto-card a {
+    display: inline-block;
+    background-color: #61dafb;
+    color: #282c34;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.projeto-card a:hover {
+    background-color: #4fa3d7;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1a1e24;
+    color: #a0a0a0; 
+    text-align: center;
+    padding: 30px 0;
+    border-top: 1px solid #3a3f47; 
+    font-size: 0.9em;
+}
+
+footer p {
+    margin-bottom: 5px; 
+}
+
+footer a {
+    color: #61dafb;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #4fa3d7;
+}
