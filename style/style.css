@@ -6,10 +6,24 @@
     padding: 0;
 }
 
+:root {
+    /* Cores */
+    --cor-principal: #61dafb; /* Azul vibrante */
+    --cor-fundo-escuro: #282c34; /* Fundo geral do body */
+    --cor-fundo-header-footer: #1a1e24; /* Fundo do cabeçalho e rodapé */
+    --cor-texto-claro: #e0e0e0; /* Texto principal */
+    --cor-texto-suave: #ccc; /* Texto secundário/descrições */
+    --cor-borda: #3a3f47; /* Cor das bordas sutis */
+
+    /* Fontes */
+    --fonte-principal: 'Arial', sans-serif;
+    --fonte-titulos: 'Helvetica', sans-serif;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #282c34;
-    color: #e0e0e0;
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo-escuro);
+    color: var(--cor-texto-claro);
     line-height: 1.6;
 }
 
@@ -21,11 +35,11 @@ body {
 }
 
 header {
-    background-color: #1a1e24;
-    color: #61dafb;
+    background-color: var(--cor-fundo-header-footer);
+    color: var(--cor-principal);
     padding: 40px 0;
     text-align: center;
-    border-bottom: 3px solid #62dafb;
+    border-bottom: 3px solid var(--cor-principal);
 }
 
 header h1 {
@@ -35,7 +49,7 @@ header h1 {
 
 header p {
     font-size: 1.2em;
-    color: #ccc;
+    color: var(--cor-texto-suave);
     max-width: 800px;
     margin: 0 auto;
 }
@@ -48,19 +62,19 @@ header nav {
 
 #projetos {
     padding: 60px 0;
-    background-color: #3a3f47;
+    background-color: var(--cor-borda);
     text-align: center;
 }
 
 #projetos h2 {
     font-size: 2.5em;
-    color: #61dafb;
+    color: var(--cor-principal);
     margin-bottom: 40px;
 }
 
 /* Esetilo para cada card de projeto */
 .projeto-card {
-    background-color: #282c34;
+    background-color: var(--cor-fundo-escuro);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -76,7 +90,7 @@ header nav {
 }
 
 .projeto-card h3 {
-    color: #e0e0e0;
+    color: var(--cor-texto-claro);
     font-size: 1.8em;
     margin-bottom: 15px;
 }
@@ -93,14 +107,14 @@ header nav {
 
 .projeto-card p {
     font-size: 1em;
-    color: #ccc;
+    color: var(--cor-texto-suave);
     margin-bottom: 25px;
 }
 
 .projeto-card a {
     display: inline-block;
-    background-color: #61dafb;
-    color: #282c34;
+    background-color: var(--cor-principal);
+    color: var(--cor-fundo-escuro);
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -115,11 +129,11 @@ header nav {
 
 /* Rodapé */
 footer {
-    background-color: #1a1e24;
+    background-color: var(--cor-fundo-header-footer);
     color: #a0a0a0; 
     text-align: center;
     padding: 30px 0;
-    border-top: 1px solid #3a3f47; 
+    border-top: 1px solid var(--cor-borda); 
     font-size: 0.9em;
 }
 
@@ -128,7 +142,7 @@ footer p {
 }
 
 footer a {
-    color: #61dafb;
+    color: var(--cor-principal);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
